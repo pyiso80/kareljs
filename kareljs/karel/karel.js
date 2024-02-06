@@ -15,7 +15,7 @@ const putBeeper = () => {
 };
 
 const run = () => {
-    alert("Your instructions for karel are being executed!")
+    alert("This is default run method!")
 }
     
 module.exports =  {move, turnLeft, putBeeper, pickBeeper, run};
