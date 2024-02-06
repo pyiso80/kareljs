@@ -15,7 +15,8 @@ const putBeeper = () => {
 };
 
 const run = () => {
-    alert("This is default run method!")
+    alert("This is default run method!" + __dirname)
+    console.log("Done!")
 }
     
 module.exports =  {move, turnLeft, putBeeper, pickBeeper, run};
