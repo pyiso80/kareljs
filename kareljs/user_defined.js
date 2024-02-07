@@ -10,4 +10,3 @@ function run() {
     turnLeft()
 }
 
-start_karel(__filename)

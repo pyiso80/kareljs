@@ -2,11 +2,6 @@ console.log('Hello from Electron 👋')
 
 const { app, BrowserWindow } = require('electron/main')
 
-const {move, showError} = require('./karel/karel')
-
-//move()
-//console.log(showError())
-
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
@@ -22,7 +17,6 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
   createWindow()
-
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow()
