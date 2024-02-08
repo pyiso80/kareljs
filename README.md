@@ -9,6 +9,7 @@ Reasons I want to implement my own version are
 
 ## Current Status
 Date: 08-02-2024
+
 I have only implemented the skeleton code which allow me run Karel program with a simple command
 `node hello_karel.js`
 This will start the Karel app (Electron App Window) and when the button is clicked, the `run` function, the entry point,   in `hello_karel.js` will be called, and Karel will start doing as it is programmed. Only the dummy Karel commands, no graphics yet. That will be the next stage, where I will have to implement the model, to represent Karel and the world he is in, and also the view the reflects Karel's current state on the screen.
