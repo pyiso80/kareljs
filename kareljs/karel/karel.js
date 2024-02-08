@@ -29,7 +29,8 @@ const start_karel = (file_name) => {
         }
         console.log(data);
         var user_defined = path.join(__dirname, '..', 'user_defined.js');
-        var user_script = data.replace(/start_karel\(__filename\)/g, "")
+        var user_script = data.replace(/\.\.\/kareljs\/karel\/karel/g, './karel/karel')
+                            .replace(/start_karel\(__filename\)/g, "")
         fs.writeFile(user_defined, user_script, 'utf-8', function (err) {
             console.log(err);
         });

@@ -1,4 +1,4 @@
-const {move, turnLeft, putBeeper, pickBeeper, start_karel} = require('../kareljs/karel/karel')
+const {move, turnLeft, putBeeper, pickBeeper, start_karel} = require('./karel/karel')
 
 function turnRight() {
     turnLeft()
@@ -7,6 +7,9 @@ function turnRight() {
 }
 
 function run() {
-    turnLeft()
+    turnRight()
+    pickBeeper()
+    move()
+    pickBeeper()
 }
 
